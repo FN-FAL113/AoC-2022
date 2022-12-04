@@ -44,6 +44,6 @@ readFileData().then(data =>{
     console.log(max[0][0] + " with the highest calories summed: " + max[0][1])
     // Part 2 Answer
     console.log("top 3 highest calories summed: " + max.slice(0, 3)
-                .reduce(([name, value1], [name2, value2]) => [name, value1+value2])
+                .reduce(([name, value1], [name2, value2]) => ["", value1+value2])[1]
     )
 })
